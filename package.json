@@ -1,10 +1,13 @@
 {
   "name": "astropress",
-  "version": "0.0.31",
+  "version": "0.0.4",
   "type": "module",
   "main": "./dist/astropress.umd.cjs",
   "module": "./dist/astropress.js",
   "types": "./dist/index.d.ts",
+  "repository": {
+    "url": "git+https://github.com/KartikBazzad/astropress.git"
+  },
   "files": [
     "/dist"
   ],
@@ -35,5 +38,21 @@
       "path": "dist/*.js|ts",
       "limit": "10 kB"
     }
-  ]
+  ],
+  "description": "a plugin for Astro to create endpoints",
+  "bugs": {
+    "url": "https://github.com/KartikBazzad/astropress/issues"
+  },
+  "homepage": "https://github.com/KartikBazzad/astropress#readme",
+  "keywords": [
+    "Astro",
+    "router",
+    "express",
+    "api",
+    "Astro",
+    "JS",
+    "astropress"
+  ],
+  "author": "KartikBazzad",
+  "license": "ISC"
 }

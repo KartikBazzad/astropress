@@ -2,6 +2,8 @@
 
 a plugin for Astro to create endpoints
 
+NOTE: Under Development, Find any bugs open a ticket or fork and create a PR.
+
 ## Plugin Config
 
 ```.ts
@@ -43,4 +45,17 @@ router.get("/user/:id", (ctx) => {
 export const all: APIRoute = (ctx: APIContext) => router.init(ctx as any);
 ```
 
-NOTE: Under Development
+### RoadMap
+
+Next Release:
+
+1. Attach Middlewares properly.
+2. Adding Child Routes.
+3. Customize the Context Object.
+4. Find a solution to make the response more fast.
+
+### Feature Request
+
+Create a Ticket for new features.
+
+Feel Free to contribute Fork , edit and Share,
