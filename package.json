@@ -6,6 +6,7 @@
   "module": "./dist/astropress.js",
   "types": "./dist/index.d.ts",
   "repository": {
+    "type": "git",
     "url": "git+https://github.com/KartikBazzad/astropress.git"
   },
   "files": [
@@ -19,7 +20,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf ./dist && tsc && vite build --watch",
+    "build": "tsc && vite build ",
+    "build:watch": "rm -rf ./dist && tsc && vite build --watch",
     "preview": "vite preview"
   },
   "devDependencies": {
