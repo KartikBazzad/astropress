@@ -1,0 +1,39 @@
+{
+  "name": "astropress",
+  "version": "0.0.31",
+  "type": "module",
+  "main": "./dist/astropress.umd.cjs",
+  "module": "./dist/astropress.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/astropress.js",
+      "require": "./dist/astropress.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "rm -rf ./dist && tsc && vite build --watch",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.2.6",
+    "@types/node": "^20.5.0",
+    "astro": "^2.10.7",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.2"
+  },
+  "dependencies": {
+    "path-to-regexp": "^6.2.1"
+  },
+  "size-limit": [
+    {
+      "path": "dist/*.js|ts",
+      "limit": "10 kB"
+    }
+  ]
+}
