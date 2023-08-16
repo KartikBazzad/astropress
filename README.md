@@ -1,6 +1,6 @@
 # Astropress
 
-a plugin for Astro to create endpoints
+a plugin for Astro to create api endpoints
 
 NOTE: Under Development, Find any bugs open a ticket or fork and create a PR.
 
