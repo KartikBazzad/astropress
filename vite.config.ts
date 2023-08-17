@@ -6,6 +6,7 @@ export default defineConfig({
   esbuild: {
     minifyWhitespace: true,
     treeShaking: true,
+    drop: ["console", "debugger"],
   },
   build: {
     minify: true,

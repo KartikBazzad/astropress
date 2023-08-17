@@ -1,6 +1,6 @@
 {
   "name": "astropress",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "type": "module",
   "main": "./dist/astropress.umd.cjs",
   "module": "./dist/astropress.js",
@@ -32,8 +32,12 @@
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.5.2"
   },
+  "peerDependencies": {
+    "astro": "^2.10.7"
+  },
   "dependencies": {
-    "path-to-regexp": "^6.2.1"
+    "path-to-regexp": "^6.2.1",
+    "ufo": "^1.2.0"
   },
   "size-limit": [
     {

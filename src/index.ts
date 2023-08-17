@@ -1,4 +1,5 @@
 import type { APIContext, AstroIntegration } from "astro";
+import { joinURL, cleanDoubleSlashes } from "ufo";
 import { pathToRegexp, Key } from "path-to-regexp";
 type Method = "GET" | "POST" | "PUT" | "DELETE";
 type Route = {
@@ -56,7 +57,7 @@ export class Router {
       throw new TypeError("typeof callback must be a function");
 
     const keys: Key[] = [];
-    const fullPath = this.basePath + uri; // Prepend the base path
+    const fullPath = cleanDoubleSlashes(joinURL(this.basePath, uri)); // Prepend the base path
     const regex = pathToRegexp(fullPath, keys);
     const route = { method, uri: fullPath, regex, keys, callbacks: handlers };
     this.routes.push(route);
